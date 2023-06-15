@@ -1,0 +1,13 @@
+<h2>Hobby List</h2>
+
+<div *ngIf="hobbies && hobbies.length > 0">
+  <ul>
+    <li *ngFor="let hobby of hobbies">
+      {{ hobby.name }}
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="!hobbies || hobbies.length === 0">
+  <p>No hobbies found.</p>
+</div>

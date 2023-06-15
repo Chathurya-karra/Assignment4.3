@@ -1,0 +1,11 @@
+<div *ngIf="hobby">
+    <h2>{{ hobby.name }}</h2>
+    <p>{{ hobby.description }}</p>
+    <p>Difficulty: {{ hobby.difficulty }}</p>
+    <p>Duration: {{ hobby.duration }} hours</p>
+  </div>
+  
+  <div *ngIf="!hobby">
+    <p>No hobby details found.</p>
+  </div>
+  
